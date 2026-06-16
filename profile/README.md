@@ -6,7 +6,7 @@ Sharpy lets you create invoices that automatically distribute funds to multiple 
 
 ---
 
-## 🚀 Live
+## Live
 
 | | |
 |---|---|
@@ -15,7 +15,7 @@ Sharpy lets you create invoices that automatically distribute funds to multiple 
 
 ---
 
-## 📦 Repositories
+## Repositories
 
 | Repo | Description |
 |------|-------------|
@@ -25,16 +25,16 @@ Sharpy lets you create invoices that automatically distribute funds to multiple 
 
 ---
 
-## ✨ Features
+## Features
 
-- 🔁 **Recurring invoices** — auto-generate next invoice on release
-- 🔒 **Escrow protection** — configurable delay before fund release
-- 📦 **Batch operations** — up to 10 invoices in one transaction
-- 💰 **Split rules** — Fixed, Percentage, and Tiered distributions
+- **Recurring invoices** — auto-generate next invoice on release
+- **Escrow protection** — configurable delay before fund release
+- **Batch operations** — up to 10 invoices in one transaction
+- **Split rules** — Fixed, Percentage, and Tiered distributions
 
 ---
 
-## 🛠 Quick Start
+## Quick Start
 
 ```typescript
 import { SharpyClient, connectWallet, parseAmount, NETWORKS } from "@stellar-sharpy/sdk";
