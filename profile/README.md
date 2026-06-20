@@ -1,3 +1,5 @@
+<img width="767" height="354" alt="sharpy" src="https://github.com/user-attachments/assets/75892e8b-0991-4ef3-8ac9-d44d1ff72bb1" />
+
 # Sharpy
 
 Sharpy is an advanced split payment protocol built on Stellar Soroban. It enables creators to issue invoices that automatically distribute funds to multiple recipients according to configurable split rules. The protocol is designed for freelancers, DAOs, agencies, and any team that needs transparent, programmable, on-chain payment splitting.
