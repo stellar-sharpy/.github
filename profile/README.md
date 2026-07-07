@@ -13,7 +13,7 @@ Sharpy lets you create invoices that automatically distribute funds to multiple 
 | dApp | [sharpy-sigma.vercel.app](https://sharpy-sigma.vercel.app) |
 | Testnet Contract | [CAYTIFPD6...](https://stellar.expert/explorer/testnet/contract/CAYTIFPD6RFWVHMK5SPPUUIWWAAANHKOJB6GOAJS5SR5MBKZMEY2UODZ) |
 
-![Sharpy App Screenshot](https://sharpy-sigma.vercel.app/sharpy.png)
+<img width="767" height="354" alt="sharpy" src="https://github.com/user-attachments/assets/8ac67307-2b20-47a8-a405-2771e6c6dc07" />
 
 ## Architecture
 
