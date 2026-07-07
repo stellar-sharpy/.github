@@ -62,6 +62,7 @@ graph TD
 - Invoice stats — funded/total/completion tracking
 - Full audit log per invoice
 - QR codes and shareable invoice links
+- x402 agentic payments — AI agents and HTTP clients pay invoices via the x402 protocol
 - Dark/light mode
 
 ---
