@@ -13,6 +13,32 @@ Sharpy lets you create invoices that automatically distribute funds to multiple 
 | dApp | [sharpy-sigma.vercel.app](https://sharpy-sigma.vercel.app) |
 | Testnet Contract | [CAYTIFPD6...](https://stellar.expert/explorer/testnet/contract/CAYTIFPD6RFWVHMK5SPPUUIWWAAANHKOJB6GOAJS5SR5MBKZMEY2UODZ) |
 
+![Sharpy App Screenshot](https://sharpy-sigma.vercel.app/sharpy.png)
+
+## Architecture
+
+```mermaid
+graph TD
+    User["User / Browser"]
+    Freighter["Freighter Wallet"]
+    App["sharpy-app\nNext.js 14 · Vercel"]
+    SDK["@stellar-sharpy/sdk\nTypeScript SDK"]
+    RPC["Soroban RPC\nstellar-sdk 16.0.1"]
+    Contract["Sharpy Contract\nSoroban · Protocol 27"]
+    Stellar["Stellar Network"]
+    Horizon["Horizon API"]
+
+    User -->|"connects wallet"| Freighter
+    User -->|"interacts with UI"| App
+    App -->|"calls methods"| SDK
+    Freighter -->|"signs transactions"| SDK
+    SDK -->|"submits tx"| RPC
+    RPC -->|"executes"| Contract
+    Contract -->|"state + events"| Stellar
+    Stellar -->|"event polling"| Horizon
+    Horizon -->|"invoice history"| App
+```
+
 ---
 
 ## Repositories
