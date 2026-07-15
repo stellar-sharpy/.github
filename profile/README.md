@@ -10,11 +10,12 @@
 
 | | |
 |---|---|
+| **Pitch Deck** | [View on Gamma](https://gamma.app/docs/Split-Payments-on-Stellar-s0et8z1agtva59n) |
 | **dApp** | [sharpy-sigma.vercel.app](https://sharpy-sigma.vercel.app) |
 | **Testnet Contract** | [`CAYTIFPD6RFWVHMK5SPPUUIWWAAANHKOJB6GOAJS5SR5MBKZMEY2UODZ`](https://stellar.expert/explorer/testnet/contract/CAYTIFPD6RFWVHMK5SPPUUIWWAAANHKOJB6GOAJS5SR5MBKZMEY2UODZ) |
 | **Mainnet Contract** | Coming soon |
 | **npm** | `@stellar-sharpy/sdk` |
-| **Pitch Deck** | [View on Gamma](https://gamma.app/docs/Split-Payments-on-Stellar-s0et8z1agtva59n) |
+
 
 ---
 
