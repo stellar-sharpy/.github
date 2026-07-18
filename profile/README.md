@@ -2,7 +2,8 @@
 
 **Sharpy** is an open-source payment splitting protocol built on Stellar Soroban. It enables creators to issue on-chain invoices that automatically distribute funds to multiple recipients according to configurable rules — with recurring schedules, escrow protection, agentic payment support, and a full TypeScript SDK.
 
-<img width="767" height="354" alt="sharpy" src="https://github.com/user-attachments/assets/8ac67307-2b20-47a8-a405-2771e6c6dc07" />
+<img width="1047" height="649" alt="image" src="https://github.com/user-attachments/assets/0a947263-2454-4b97-be11-96416ac1ad6b" />
+
 
 ---
 
