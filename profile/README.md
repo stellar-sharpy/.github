@@ -17,11 +17,11 @@
 | **Mainnet Contract** | Coming soon |
 | **npm** | `@stellar-sharpy/sdk` |
 
-### 🎯 Live Testnet Transactions
+###  Live Testnet Transactions
 
 See Sharpy in action with real on-chain transactions:
 
-- [Create Invoice #3](https://stellar.expert/explorer/testnet/tx/ce46bcef570a4c05f6348081126135c9f24165c5e470a6b51b923f423156c5da) — Basic invoice creation
+- [Create Invoice #3](https://stellar.expert/explorer/testnet/tx/ce46bcef570a4c05f6348081126135c9f24165c5e470a6b51b923f423156c5da) — invoice creation
 - [Batch Creation](https://stellar.expert/explorer/testnet/tx/97cee323bb5443ddc8439f9d99f5a34e585f8cf74872a6138c5f1456adb5ab90) — Multiple invoices in one transaction
 - [Multi-recipient Split](https://stellar.expert/explorer/testnet/tx/785d079c53350fdf50db1e6d92da2219e148b204b87b6448632d1e21a94faac4) — Payment split to multiple addresses
 - [Escrow Protection](https://stellar.expert/explorer/testnet/tx/db19f9206a4a25b4431b6a3dfae25080f3c20a285249521aac5e593f1c26e76c) — Invoice with time-locked escrow
