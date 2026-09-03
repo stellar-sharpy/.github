@@ -14,11 +14,11 @@
 | **Demo Video** | [Watch on Loom](https://www.loom.com/share/09aa4a78e0c944dcab866a7036fde24d) |
 | **Pitch Deck** | [View on Gamma](https://gamma.app/docs/Split-Payments-on-Stellar-s0et8z1agtva59n) |
 | **dApp** | [sharpy-sigma.vercel.app](https://sharpy-sigma.vercel.app) |
-| **Testnet Contract** | [`CCMN5OYWBWVVRIB3IDE2CCODM3CMGSMYQ7EV2UVBJ23DVIH2CL6FJRXP`](https://stellar.expert/explorer/testnet/contract/CCMN5OYWBWVVRIB3IDE2CCODM3CMGSMYQ7EV2UVBJ23DVIH2CL6FJRXP) |
+| **Testnet Contract** | [`CAEWQX36RLGP2WY6ACOREDJEIGELYV3HWWUPGV3CJMC27OWGQWZHTH6T`](https://stellar.expert/explorer/testnet/contract/CAEWQX36RLGP2WY6ACOREDJEIGELYV3HWWUPGV3CJMC27OWGQWZHTH6T) (184-test build, live 2026-09-04) |
 | **Mainnet Contract** | Coming soon |
 | **npm** | `@stellar-sharpy/sdk` |
 
-###  Live Testnet Transactions
+### Live Testnet Transactions
 
 See Sharpy in action with real on-chain transactions:
 
@@ -37,9 +37,9 @@ See Sharpy in action with real on-chain transactions:
 
 | Repo | Description | Language | Status |
 |------|-------------|----------|--------|
-| [sharpy-contracts](https://github.com/stellar-sharpy/sharpy-contracts) | Core Soroban smart contract | Rust | ✅ Testnet live |
-| [sharpy-sdk](https://github.com/stellar-sharpy/sharpy-sdk) | TypeScript SDK | TypeScript | ✅ Published |
-| [sharpy-app](https://github.com/stellar-sharpy/sharpy-app) | Next.js 14 frontend dApp | TypeScript | ✅ Vercel live |
+| [sharpy-contracts](https://github.com/stellar-sharpy/sharpy-contracts) | Core Soroban smart contract (184 tests) | Rust | Testnet live |
+| [sharpy-sdk](https://github.com/stellar-sharpy/sharpy-sdk) | TypeScript SDK + React hooks | TypeScript | Source live |
+| [sharpy-app](https://github.com/stellar-sharpy/sharpy-app) | Next.js 14 frontend dApp (16 routes) | TypeScript | Vercel live |
 
 ---
 
@@ -99,6 +99,14 @@ graph TD
 - **Escrow dispute mechanism** — optional arbitrator can intervene before release
 - **Audit log** — full on-chain audit trail per invoice
 - **Admin circuit breaker** — pause/unpause contract
+
+### Extensions (2026-09-04 wave)
+- **Streaming payments** — cliff-gated linear vesting (`StreamingState`), SDK + `StreamingControl` UI
+- **Composable routing** — recipient can be another invoice ID (pass-through hop)
+- **Tranche release** — partial release in basis points, cumulative cap
+- **Whitelist gating** — creator-managed payer allowlist enforced in `pay`
+- **Protocol fee** — admin bps fee with pure preview
+- **React hooks** — `useInvoice`, `useCreateInvoice`, `useWallet`, `useInvoicesByCreator`, `useStreaming`, `useCCTP`
 
 ### Protocol 25/26 Features
 | CAP | Protocol | Feature |
@@ -194,7 +202,14 @@ curl -X POST https://sharpy-sigma.vercel.app/api/x402/1 \
 | `bump_invoice_ttl(id)` | Extend invoice storage TTL (Protocol 26 CAP-78) |
 | `dispute_release(invoice_id)` | Raise escrow dispute |
 | `resolve_dispute(invoice_id, release)` | Arbitrator resolves dispute |
-| `pause / unpause` | Admin circuit breaker |
+| `create_stream(params)` / `withdrawVested` / `cancelStream` / `topUpStream` | Linear-vesting token streams with cliff and cancel |
+| `set_route` / `get_route` / `resolve_route` | Pass-through hop to another invoice |
+| `release_tranche` / `get_released_bps` | Partial release in basis points (capped at 100%) |
+| `set_whitelist` / `get_whitelist` / `add/remove_whitelisted_payer` | Creator-managed payer allowlist |
+| `set_protocol_fee` / `get_protocol_fee` / `preview_fee` | Admin protocol fee in bps with preview |
+| `setInvoiceTags` / `setInvoiceMemoExt` / `setInvoiceMetadata` / `setDiscount` | Invoice extensions via SDK |
+| `refundBatch` / `extendDeadline` | Batch refund and deadline extension via SDK |
+| `pause` / `unpause` | Admin circuit breaker |
 
 ---
 
@@ -202,7 +217,7 @@ curl -X POST https://sharpy-sigma.vercel.app/api/x402/1 \
 
 | soroban-sdk | stellar-sdk | Protocol | Notes |
 |-------------|-------------|----------|-------|
-| 26.1.0 | 16.0.1 | 27 ✅ | Current — CAP-71 auth delegation ready |
+| 26.1.0 | 16.0.1 | 27 | Current — CAP-71 auth delegation ready |
 
 ---
 
