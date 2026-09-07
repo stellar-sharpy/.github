@@ -43,6 +43,8 @@ Coordinated v0.3.0 release across contracts, SDK, and app.
 
 **sharpy-sdk** — PRs #109-115: streaming, CCTP and invoice hooks (`useStreaming`, `useCCTP`, `useInvoice`, `useCreateInvoice`, `useInvoicesByCreator`, `useWallet`). ESM/CJS/DTS builds.
 
+**sharpy-app** — PRs #187-193: 16 routes, streaming UI (`StreamingControl`), production deploy on Vercel (`sharpy-sigma.vercel.app`).
+
 ---
 
 ## Repositories
