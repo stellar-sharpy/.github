@@ -33,6 +33,14 @@ See Sharpy in action with real on-chain transactions:
 
 ---
 
+## Releases
+
+### v0.3.0 — 2026-09-07
+
+Coordinated v0.3.0 release across contracts, SDK, and app.
+
+---
+
 ## Repositories
 
 | Repo | Description | Language | Status |
