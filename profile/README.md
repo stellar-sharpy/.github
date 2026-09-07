@@ -41,6 +41,8 @@ Coordinated v0.3.0 release across contracts, SDK, and app.
 
 **sharpy-contracts** — 184 tests passing. PRs #168-172: streaming payments, composable routing, tranche release, whitelist gating, protocol fee. Testnet contract `CAEWQX36RLGP2WY6ACOREDJEIGELYV3HWWUPGV3CJMC27OWGQWZHTH6T`.
 
+**sharpy-sdk** — PRs #109-115: streaming, CCTP and invoice hooks (`useStreaming`, `useCCTP`, `useInvoice`, `useCreateInvoice`, `useInvoicesByCreator`, `useWallet`). ESM/CJS/DTS builds.
+
 ---
 
 ## Repositories
