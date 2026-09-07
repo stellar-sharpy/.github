@@ -33,6 +33,28 @@ See Sharpy in action with real on-chain transactions:
 
 ---
 
+## Releases
+
+### v0.3.0 — 2026-09-07
+
+Coordinated v0.3.0 release across contracts, SDK, and app, tagged from each repo main branch.
+
+**sharpy-contracts** — 184 tests passing. PRs #168-172: streaming payments (`create_stream`, `withdrawVested`, `cancelStream`, `topUpStream`), composable routing (`set_route`), tranche release (`release_tranche`), whitelist gating (`set_whitelist`), protocol fee (`set_protocol_fee`). Testnet contract `CAEWQX36RLGP2WY6ACOREDJEIGELYV3HWWUPGV3CJMC27OWGQWZHTH6T`.
+
+**sharpy-sdk** — PRs #109-115: streaming, CCTP and invoice hooks (`useStreaming`, `useCCTP`, `useInvoice`, `useCreateInvoice`, `useInvoicesByCreator`, `useWallet`). ESM/CJS/DTS builds.
+
+**sharpy-app** — PRs #187-193: 16 routes, streaming UI (`StreamingControl`), production deploy on Vercel (`sharpy-sigma.vercel.app`).
+
+Links:
+
+- [sharpy-contracts v0.3.0](https://github.com/stellar-sharpy/sharpy-contracts/releases/tag/v0.3.0) · [compare v0.2.0...v0.3.0](https://github.com/stellar-sharpy/sharpy-contracts/compare/v0.2.0...v0.3.0)
+- [sharpy-sdk v0.3.0](https://github.com/stellar-sharpy/sharpy-sdk/releases/tag/v0.3.0) · [compare v0.2.0...v0.3.0](https://github.com/stellar-sharpy/sharpy-sdk/compare/v0.2.0...v0.3.0)
+- [sharpy-app v0.3.0](https://github.com/stellar-sharpy/sharpy-app/releases/tag/v0.3.0) · [compare v0.2.0...v0.3.0](https://github.com/stellar-sharpy/sharpy-app/compare/v0.2.0...v0.3.0)
+- [Testnet contract](https://stellar.expert/explorer/testnet/contract/CAEWQX36RLGP2WY6ACOREDJEIGELYV3HWWUPGV3CJMC27OWGQWZHTH6T)
+- [Production app](https://sharpy-sigma.vercel.app)
+
+---
+
 ## Repositories
 
 | Repo | Description | Language | Status |
