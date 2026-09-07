@@ -45,6 +45,14 @@ Coordinated v0.3.0 release across contracts, SDK, and app.
 
 **sharpy-app** — PRs #187-193: 16 routes, streaming UI (`StreamingControl`), production deploy on Vercel (`sharpy-sigma.vercel.app`).
 
+Links:
+
+- [sharpy-contracts v0.3.0](https://github.com/stellar-sharpy/sharpy-contracts/releases/tag/v0.3.0) · [compare v0.2.0...v0.3.0](https://github.com/stellar-sharpy/sharpy-contracts/compare/v0.2.0...v0.3.0)
+- [sharpy-sdk v0.3.0](https://github.com/stellar-sharpy/sharpy-sdk/releases/tag/v0.3.0) · [compare v0.2.0...v0.3.0](https://github.com/stellar-sharpy/sharpy-sdk/compare/v0.2.0...v0.3.0)
+- [sharpy-app v0.3.0](https://github.com/stellar-sharpy/sharpy-app/releases/tag/v0.3.0) · [compare v0.2.0...v0.3.0](https://github.com/stellar-sharpy/sharpy-app/compare/v0.2.0...v0.3.0)
+- [Testnet contract](https://stellar.expert/explorer/testnet/contract/CAEWQX36RLGP2WY6ACOREDJEIGELYV3HWWUPGV3CJMC27OWGQWZHTH6T)
+- [Production app](https://sharpy-sigma.vercel.app)
+
 ---
 
 ## Repositories
